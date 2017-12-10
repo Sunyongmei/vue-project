@@ -47,7 +47,7 @@ export default {
       this.axios
        .get('getimgcategory')
        .then((response)=>{
-       if(response.status===200&&response.data.status===0){
+       if(response.status===200 && response.data.status===0){
         this.menus=response.data.message;
         this.ulWidth='width:'+(78*this.menus.length+50)+'px';
       }else{
